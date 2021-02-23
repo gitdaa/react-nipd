@@ -14,5 +14,5 @@ export const XExampleComponent = ({ text }: Props) => {
 }
 
 export const ABCComponent = ({ text }: Props) => {
-  return <div className={styles.test}>XExample Component: {text}</div>
+  return <div className={styles.test}>TEST XExample Component: {text}</div>
 }
