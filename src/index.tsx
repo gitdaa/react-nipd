@@ -8,3 +8,7 @@ interface Props {
 export const ExampleComponent = ({ text }: Props) => {
   return <div className={styles.test}>Example Component: {text}</div>
 }
+
+export const XExampleComponent = ({ text }: Props) => {
+  return <div className={styles.test}>XExample Component: {text}</div>
+}
