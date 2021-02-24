@@ -28,6 +28,17 @@ export {
 } from './notify'
 
 export {
+  AssessmentItemsLookup,
+  AssessmentItemsLookupRequest
+} from './nursing/assessment'
+
+export {
+  PatientStandingWithIO,
+  FluidIOItem,
+  FluidIOListRequest
+} from './nursing/fluidio'
+
+export {
   Patient,
   PatientNotifyGroup,
   PatientInfo,
@@ -52,4 +63,4 @@ export {
   RecentAuth
 } from './user'
 
-export { GlobalConfig, watcherEntityEvent } from './utils'
+export { GlobalConfig, watcherEntityEvent, RequestType } from './utils'

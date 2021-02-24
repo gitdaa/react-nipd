@@ -7,3 +7,12 @@ export interface watcherEntityEvent {
   onSuccess?: Function
   onFailure?: Function
 }
+
+export interface RequestType {
+  REQUEST: string
+  SUCCESS: string
+  FAILURE: string
+  LOADMORE: string
+  CANCEL: string
+  CLEAR: string
+}
