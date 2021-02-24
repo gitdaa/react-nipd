@@ -3,3 +3,5 @@ export interface SubmitStatus {
   isSucceed?: boolean
   isFailure?: boolean
 }
+
+export interface NursingNoteFocusStatus extends SubmitStatus {}
