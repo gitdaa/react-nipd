@@ -16,3 +16,5 @@ export const XExampleComponent = ({ text }: Props) => {
 export const ABCComponent = ({ text }: Props) => {
   return <div className={styles.test}>TEST XExample Component: {text}</div>
 }
+
+export { action, createRequestType } from './shared/libs'
