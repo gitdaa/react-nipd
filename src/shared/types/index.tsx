@@ -33,10 +33,56 @@ export {
 } from './nursing/assessment'
 
 export {
+  DtxItem,
+  PatientStandingWithDtx,
+  FetchDtxListRequest
+} from './nursing/dtx'
+
+export {
+  EvaluationItemsLookup,
+  EvaluationItemsLookupRequest
+} from './nursing/evaluation'
+
+export {
   PatientStandingWithIO,
   FluidIOItem,
   FluidIOListRequest
 } from './nursing/fluidio'
+
+export {
+  FocusState,
+  FocusItem,
+  FocusItemRequest,
+  FocusInfoRequestData,
+  FocusInfoRequest,
+  FocusItemHistory,
+  FocusItemHistoryRequest,
+  FocusHistoryByIdRequest
+} from './nursing/focus'
+
+export {
+  InterventionItemsLookup,
+  InterventionItemsLookupRequest
+} from './nursing/intervention'
+
+export { ProblemItem } from './nursing/problem'
+
+export {
+  VitalSignItem,
+  VitalSignNoteItem,
+  VitalSignNoteItemRequest,
+  IntakeItem,
+  FluidOutputItem,
+  ExcreteItem
+} from './nursing/vitalsign'
+
+export {
+  VitalSign,
+  NursingNoteItem,
+  NursingNoteAssessment,
+  NursingNoteIntervention,
+  NursingNoteEvaluation
+} from './nursing'
 
 export {
   Patient,
