@@ -1,10 +1,13 @@
 {
   "name": "react-nipd",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Made with create-react-library",
-  "author": "gitda",
+  "author": "krissada sumalai",
   "license": "MIT",
-  "repository": "gitda/react-nipd",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gitdaa/react-nipd"
+  },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "module": "dist/index.modern.js",
