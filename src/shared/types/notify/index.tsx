@@ -13,7 +13,7 @@ export interface FlashNotifyRequest {
  * test
  */
 export interface FlashNotifyItem {
-  notify_id: string
+  notify_id: number
 
   an: number
 
