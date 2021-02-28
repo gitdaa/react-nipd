@@ -17,6 +17,7 @@ export const LOGIN = createRequestType('LOGIN')
 export const GET_PATIENT_OWNER = createRequestType('GET_PATIENT_OWNER')
 export const GET_PATIENT_STANDING = createRequestType('GET_PATIENT_STANDING')
 export const ADD_TO_DESK = createRequestType('ADD_TO_DESK')
+export const GET_PATIENT_HEALTH = createRequestType('GET_PATIENT_HEALTH')
 
 export const ADD_NEW_FOCUS = createRequestType('ADD_NEW_FOCUS')
 export const ADD_NEW_VITALSIGN = createRequestType('ADD_NEW_VITALSIGN')
