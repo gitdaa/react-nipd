@@ -26,6 +26,7 @@ export interface PatientNotifyGroup {
   laboratory?: FlashNotifyItem[]
   medication?: FlashNotifyItem[]
   allergy?: FlashNotifyItem[]
+  xray?: FlashNotifyItem[]
 }
 
 export interface PatientInfo extends Patient {
