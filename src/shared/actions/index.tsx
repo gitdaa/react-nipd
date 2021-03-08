@@ -19,6 +19,8 @@ export const GET_PATIENT_STANDING = createRequestType('GET_PATIENT_STANDING')
 export const ADD_TO_DESK = createRequestType('ADD_TO_DESK')
 export const GET_PATIENT_HEALTH = createRequestType('GET_PATIENT_HEALTH')
 
+export const GET_PATIENT_ALLERGIES = createRequestType('GET_PATIENT_ALLERGIES')
+
 export const ADD_NEW_FOCUS = createRequestType('ADD_NEW_FOCUS')
 export const ADD_NEW_VITALSIGN = createRequestType('ADD_NEW_VITALSIGN')
 export const MOVE_FOCUS_SECTION = createRequestType('MOVE_FOCUS_SECTION')
