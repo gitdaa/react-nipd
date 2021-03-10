@@ -103,3 +103,25 @@ export interface PatientHealthLabRequest {
   errorMessage: string
   data: any[]
 }
+
+export interface PatientHealthVitalSignRequest {
+  expireAt: Date | null
+  isFetching: boolean
+  error: boolean
+  errorMessage: string
+  data: HealthVitalSignRecent
+}
+
+// 'temperature' => $temperature,
+// 'blood_pressure' => $blood_pressure,
+// 'pulse' => $pulse,
+// 'heart_rate' => $heart_rate,
+// 'respiratory_rate' => $respiratory_rate,
+
+export interface HealthVitalSignRecent {
+  temperature: undefined | any[]
+  blood_pressure: undefined | any[]
+  pulse: undefined | any[]
+  heart_rate: undefined | any[]
+  respiratory_rate: undefined | any[]
+}

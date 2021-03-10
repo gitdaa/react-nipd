@@ -95,7 +95,8 @@ export type {
   PatientOwnerRequest,
   PatientStanding,
   PatientStandingRequest,
-  PatientHealthLabRequest
+  PatientHealthLabRequest,
+  PatientHealthVitalSignRequest
 } from './patient'
 
 export type { ErrorResponse, ServerResponse } from './service'
