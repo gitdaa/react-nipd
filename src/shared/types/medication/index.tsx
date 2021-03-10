@@ -116,3 +116,11 @@ export interface DispensingProfileRequest {
   errorMessage: string | null
   expireAt: Date | null
 }
+
+export interface HealthRecentDispensingRequest {
+  isFetching: boolean
+  data: MedicationDispensed[]
+  error: boolean
+  errorMessage: string | null
+  expireAt: Date | null
+}

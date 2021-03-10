@@ -19,7 +19,22 @@ export const GET_PATIENT_STANDING = createRequestType('GET_PATIENT_STANDING')
 export const ADD_TO_DESK = createRequestType('ADD_TO_DESK')
 export const GET_PATIENT_HEALTH = createRequestType('GET_PATIENT_HEALTH')
 
+export const GET_PATIENT_HEALTH_VITAL = createRequestType(
+  'GET_PATIENT_HEALTH_VITAL'
+)
+export const GET_PATIENT_HEALTH_LAB = createRequestType(
+  'GET_PATIENT_HEALTH_LAB'
+)
 export const GET_PATIENT_ALLERGIES = createRequestType('GET_PATIENT_ALLERGIES')
+export const GET_PATIENT_RECENT_MEDICATION = createRequestType(
+  'GET_PATIENT_RECENT_MEDICATION'
+)
+export const GET_PATIENT_HEALTH_DTX = createRequestType(
+  'GET_PATIENT_HEALTH_DTX'
+)
+export const GET_TEST = createRequestType('GET_TEST')
+
+export const GET_PATIENT_HEALTH_IO = createRequestType('GET_PATIENT_HEALTH_IO')
 
 export const ADD_NEW_FOCUS = createRequestType('ADD_NEW_FOCUS')
 export const ADD_NEW_VITALSIGN = createRequestType('ADD_NEW_VITALSIGN')

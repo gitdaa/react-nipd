@@ -10,7 +10,8 @@ export type {
   MedicationProfileStat,
   MedicationProfileRequest,
   MedicationProfileStatRequest,
-  DispensingProfileRequest
+  DispensingProfileRequest,
+  HealthRecentDispensingRequest
 } from './medication'
 
 export type {
@@ -93,7 +94,8 @@ export type {
   PatientInfoAllergies,
   PatientOwnerRequest,
   PatientStanding,
-  PatientStandingRequest
+  PatientStandingRequest,
+  PatientHealthLabRequest
 } from './patient'
 
 export type { ErrorResponse, ServerResponse } from './service'

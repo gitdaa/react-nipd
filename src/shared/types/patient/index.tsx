@@ -71,6 +71,7 @@ export interface PatientOwnerRequest {
   isFetching: boolean
   error: boolean
   errorMessage: string
+  errorAttempt: number
   filter: string | null
   data: Patient[]
 }
@@ -93,4 +94,12 @@ export interface PatientStandingRequest {
   errorMessage: string
   filter: string | null
   data: PatientStanding[]
+}
+
+export interface PatientHealthLabRequest {
+  expireAt: Date | null
+  isFetching: boolean
+  error: boolean
+  errorMessage: string
+  data: any[]
 }
