@@ -1,3 +1,4 @@
+import { BaseRequest } from '..'
 import { FlashNotifyItem } from '../notify'
 
 export interface Patient {
@@ -66,14 +67,9 @@ export interface PatientInfoAllergies {
   symptom: string
 }
 
-export interface PatientOwnerRequest {
-  expireAt: Date | null
-  isFetching: boolean
-  error: boolean
-  errorMessage: string
+export interface PatientOwnerRequest extends BaseRequest<Patient[]> {
   errorAttempt: number
   filter: string | null
-  data: Patient[]
 }
 
 export type PatientStanding = PatientInfo & {
@@ -87,30 +83,24 @@ export type PatientStanding = PatientInfo & {
   oward_name?: string | null
 }
 
-export interface PatientStandingRequest {
-  expireAt: Date | null
-  isFetching: boolean
-  error: boolean
-  errorMessage: string
+export interface PatientStandingRequest extends BaseRequest<PatientStanding[]> {
   filter: string | null
-  data: PatientStanding[]
 }
 
-export interface PatientHealthLabRequest {
-  expireAt: Date | null
-  isFetching: boolean
-  error: boolean
-  errorMessage: string
-  data: any[]
+export interface HealthInfo {
+  an: number
+  bw: number
+  height: number
+  bmi: number
+  clinic: string
 }
 
-export interface PatientHealthVitalSignRequest {
-  expireAt: Date | null
-  isFetching: boolean
-  error: boolean
-  errorMessage: string
-  data: HealthVitalSignRecent
-}
+export interface PatientHealthInfoRequest extends BaseRequest<HealthInfo[]> {}
+
+export interface PatientHealthLabRequest extends BaseRequest<any[]> {}
+
+export interface PatientHealthVitalSignRequest
+  extends BaseRequest<HealthVitalSignRecent> {}
 
 // 'temperature' => $temperature,
 // 'blood_pressure' => $blood_pressure,

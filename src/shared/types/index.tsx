@@ -2,6 +2,14 @@ export type { AuthState } from './auth'
 
 export type { UIMarTabType } from './interface'
 
+export interface BaseRequest<T> {
+  expireAt: Date | null
+  isFetching: boolean
+  error: boolean
+  errorMessage: string
+  data: T
+}
+
 export type {
   MedicationDispensed,
   MedicationPlanInterval,
@@ -95,6 +103,8 @@ export type {
   PatientOwnerRequest,
   PatientStanding,
   PatientStandingRequest,
+  HealthInfo,
+  PatientHealthInfoRequest,
   PatientHealthLabRequest,
   PatientHealthVitalSignRequest
 } from './patient'
