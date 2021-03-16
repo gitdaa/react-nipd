@@ -108,10 +108,55 @@ export interface PatientHealthVitalSignRequest
 // 'heart_rate' => $heart_rate,
 // 'respiratory_rate' => $respiratory_rate,
 
+export interface HealthTemperature {
+  nurse_note_id: number
+  an: number
+  note_date: string
+  note_time: string
+  unit: string
+  temperature: number
+}
+
+export interface HealthBloodPressure {
+  nurse_note_id: number
+  an: number
+  note_date: string
+  note_time: string
+  unit: string
+  bp_systolic: number
+  bp_diastolic: number
+}
+
+export interface HealthPulse {
+  nurse_note_id: number
+  an: number
+  note_date: string
+  note_time: string
+  unit: string
+  pulse: number
+}
+
+export interface HealthHeartRate {
+  nurse_note_id: number
+  an: number
+  note_date: string
+  note_time: string
+  unit: string
+  heart_rate: number
+}
+export interface HealthRespriratoryRate {
+  nurse_note_id: number
+  an: number
+  note_date: string
+  note_time: string
+  unit: string
+  respiratory_rate: number
+}
+
 export interface HealthVitalSignRecent {
-  temperature: undefined | any[]
-  blood_pressure: undefined | any[]
-  pulse: undefined | any[]
-  heart_rate: undefined | any[]
-  respiratory_rate: undefined | any[]
+  temperature: undefined | HealthTemperature[]
+  blood_pressure: undefined | HealthBloodPressure[]
+  pulse: undefined | HealthPulse[]
+  heart_rate: undefined | HealthHeartRate[]
+  respiratory_rate: undefined | HealthRespriratoryRate[]
 }
