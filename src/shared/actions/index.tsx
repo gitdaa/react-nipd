@@ -151,6 +151,10 @@ export const FETCH_IO_LIST = createRequestType('FETCH_IO_LIST')
 export const FETCH_IO_HISTORY = createRequestType('FETCH_IO_HISTORY')
 export const ADD_NEW_IO = createRequestType('ADD_NEW_IO')
 
+export const FETCH_SELF_VITALSIGN_HISTORY = createRequestType(
+  'FETCH_SELF_VITALSIGN_HISTORY'
+)
+
 /// MEDPLAN
 export const GET_MEDICATION_PROFILE = createRequestType(
   'GET_MEDICATION_PROFILE'
