@@ -8,6 +8,7 @@ export interface VitalSignItem {
   weight?: number
   heart_rate?: number
   oxygen_sats?: number
+  exercise_oxygen_sats?: number
   sos?: number
   pain_score?: number
   diet_text?: string

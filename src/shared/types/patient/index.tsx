@@ -1,7 +1,7 @@
 /* eslint-disable camelcase */
 import { BaseRequest } from '..'
 import { FlashNotifyItem } from '../notify'
-import { VitalSignItem } from '../nursing/vitalsign'
+import { VitalSignItem, VitalSignNoteItem } from '../nursing/vitalsign'
 
 export interface Patient {
   hn: string
@@ -23,7 +23,7 @@ export interface Patient {
   notify_count?: number
   notify?: FlashNotifyItem[]
   notifys?: PatientNotifyGroup
-  vitalsign: VitalSignItem[]
+  vitalsign: VitalSignNoteItem[]
 }
 
 export interface PatientNotifyGroup {
