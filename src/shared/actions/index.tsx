@@ -81,7 +81,9 @@ export const FETCH_PATIENT_FOCUS_LIST_BY_PERIOD = createRequestType(
 export const FETCH_VITAL_SIGN_BY_PERIOD = createRequestType(
   'FETCH_VITAL_SIGN_BY_PERIOD'
 )
-
+export const FETCH_VITAL_SIGN_BY_WARD = createRequestType(
+  'FETCH_VITAL_SIGN_BY_WARD'
+)
 export const NN_LOOKUP_DIAGGROUP = createRequestType('NN_LOOKUP_DIAGGROUP')
 export const NN_LOOKUP_DIAG_ITEMS = createRequestType('NN_LOOKUP_DIAG_ITEMS')
 export const NN_LOOKUP_PROBLEM_LIST = createRequestType(
