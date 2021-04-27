@@ -26,6 +26,10 @@ export interface FlashNotifyItem {
    */
   message: string
 
+  title: string
+
+  flashblink: boolean
+
   /**
    * @description
    * - 1:
@@ -48,6 +52,8 @@ export interface FlashNotifyItem {
   force_strict: boolean
 
   read: boolean
+
+  hidepopup: boolean
 }
 
 export type FlashNotifyWithPatientInfo = FlashNotifyItem & Patient
