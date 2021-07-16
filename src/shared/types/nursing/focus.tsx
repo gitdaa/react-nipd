@@ -1,6 +1,17 @@
 import { NursingNoteItem } from '.'
 import { ProblemItem } from './problem'
 
+export interface NewFocusForm {
+  note_date: Date | string
+  note_period: number
+  diaggroup: number
+  diagitems: number
+  focus: NursingNoteItem[]
+  goal: NursingNoteItem[]
+  assessment: NursingNoteItem[]
+  active: boolean
+}
+
 export interface FocusState {
   an: number
   date: Date

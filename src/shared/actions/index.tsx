@@ -37,6 +37,7 @@ export const GET_TEST = createRequestType('GET_TEST')
 export const GET_PATIENT_HEALTH_IO = createRequestType('GET_PATIENT_HEALTH_IO')
 
 export const ADD_NEW_FOCUS = createRequestType('ADD_NEW_FOCUS')
+export const REMOVE_FOCUS = createRequestType('REMOVE_FOCUS')
 export const ADD_NEW_VITALSIGN = createRequestType('ADD_NEW_VITALSIGN')
 export const MOVE_FOCUS_SECTION = createRequestType('MOVE_FOCUS_SECTION')
 
