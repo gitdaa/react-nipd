@@ -1,8 +1,5 @@
-// import { NewFocusForm } from "src/types/Form/focus";
-
 import * as ActionConst from '../index'
 import { action } from '../../libs/const'
-import { NewFocusForm } from '../../types/nursing/focus'
 
 export const fetchInitWardAction = {
   request: () => action(ActionConst.FETCH_INIT_WARD.REQUEST),
@@ -40,24 +37,4 @@ export const fetchCustomExcreteAction = {
     }),
   failure: (_: string, error: any) =>
     action(ActionConst.GET_CUSTOM_EXCRETE_LIST.FAILURE, { error })
-}
-
-export const addNewFocusAction = {
-  request: (focus: NewFocusForm) =>
-    action(ActionConst.ADD_NEW_FOCUS.REQUEST, { focus }),
-  success: (_: string, response: any) =>
-    action(ActionConst.ADD_NEW_FOCUS.SUCCESS, { data: response.data }),
-  failure: (_: string, error: any) =>
-    action(ActionConst.ADD_NEW_FOCUS.FAILURE, { error }),
-  reset: () => action(ActionConst.ADD_NEW_FOCUS.CLEAR)
-}
-
-export const removeFocusAction = {
-  request: (focusId: string) =>
-    action(ActionConst.REMOVE_FOCUS.REQUEST, { focus_id: focusId }),
-  success: (_: string, response: any) =>
-    action(ActionConst.REMOVE_FOCUS.SUCCESS, { data: response.data }),
-  failure: (_: string, error: any) =>
-    action(ActionConst.REMOVE_FOCUS.FAILURE, { error }),
-  reset: () => action(ActionConst.REMOVE_FOCUS.CLEAR)
 }
