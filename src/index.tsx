@@ -19,6 +19,8 @@ export const ABCComponent = ({ text }: Props) => {
 
 export { action, createRequestType } from './shared/libs'
 
+export * as RequestAction from './shared/actions/request'
+
 export * as ActionConst from './shared/actions'
 
 export type TypeExample = Props

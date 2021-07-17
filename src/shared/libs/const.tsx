@@ -17,3 +17,13 @@ export function createRequestType(base: string): RequestType {
     CLEAR: `${base}_CLEAR`
   }
 }
+
+export interface XStringValidator {
+  isAcceptable(s: string): boolean
+}
+
+export const numberRegexp = /^[0-9]+$/
+
+export const ZipCodeValidator: XStringValidator = {
+  isAcceptable: (s: string) => s.length === 5
+}

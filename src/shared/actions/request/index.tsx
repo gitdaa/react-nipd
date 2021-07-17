@@ -13,7 +13,7 @@ export const addNewFocusAction = {
 }
 
 export const removeFocusAction = {
-  request: (focusId: number) =>
+  request: (focusId: string) =>
     action(REMOVE_FOCUS.REQUEST, { focus_id: focusId }),
   success: (_: string, response: any) =>
     action(REMOVE_FOCUS.SUCCESS, { data: response.data }),
