@@ -1,6 +1,6 @@
 {
   "name": "react-nipd",
-  "version": "1.0.26",
+  "version": "1.0.27",
   "description": "Made with create-react-library",
   "author": "krissada sumalai",
   "license": "MIT",
@@ -65,6 +65,6 @@
     "dist"
   ],
   "dependencies": {
-    "react-nipd": "^1.0.8"
+    "react-nipd": "1.0.26"
   }
 }
