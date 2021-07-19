@@ -23,4 +23,6 @@ export * as RequestAction from './shared/actions/request'
 
 export * as ActionConst from './shared/actions'
 
+export * as Reducers from './shared/reducers'
+
 export type TypeExample = Props
