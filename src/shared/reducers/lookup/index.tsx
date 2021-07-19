@@ -1,1 +1,1 @@
-export * as assessment from './assessment'
+export { assessment } from './assessment'

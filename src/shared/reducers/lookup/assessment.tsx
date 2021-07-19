@@ -12,7 +12,7 @@ const initialData: LookupAssessmentListRequest = {
   expireAt: null
 }
 
-export default function assessment(
+export function assessment(
   state = initialData,
   action: AnyAction
 ): LookupAssessmentListRequest {
