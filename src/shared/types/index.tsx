@@ -1,13 +1,13 @@
-export type { AuthState } from './auth'
+export type { AuthState } from './auth';
 
-export type { UIMarTabType } from './interface'
+export type { UIMarTabType } from './interface';
 
 export interface BaseRequest<T> {
-  expireAt: Date | null
-  isFetching: boolean
-  error: boolean
-  errorMessage: string
-  data: T
+  expireAt: Date | null;
+  isFetching: boolean;
+  error: boolean;
+  errorMessage: string;
+  data: T;
 }
 
 export type {
@@ -20,13 +20,13 @@ export type {
   MedicationProfileStatRequest,
   DispensingProfileRequest,
   HealthRecentDispensingRequest
-} from './medication'
+} from './medication';
 
 export type {
   MonitorConfigRequest,
   MonitorListRequest,
   MonitorConfig
-} from './monitor'
+} from './monitor';
 
 export type {
   FlashNotifyRequest,
@@ -34,29 +34,29 @@ export type {
   FlashNotifyWithPatientInfo,
   FlashNotifyBadgeRequest,
   FlashNotifyBadge
-} from './notify'
+} from './notify';
 
 export type {
   AssessmentItemsLookup,
   AssessmentItemsLookupRequest
-} from './nursing/assessment'
+} from './nursing/assessment';
 
 export type {
   DtxItem,
   PatientStandingWithDtx,
   FetchDtxListRequest
-} from './nursing/dtx'
+} from './nursing/dtx';
 
 export type {
   EvaluationItemsLookup,
   EvaluationItemsLookupRequest
-} from './nursing/evaluation'
+} from './nursing/evaluation';
 
 export type {
   PatientStandingWithIO,
   FluidIOItem,
   FluidIOListRequest
-} from './nursing/fluidio'
+} from './nursing/fluidio';
 
 export type {
   FocusState,
@@ -67,14 +67,14 @@ export type {
   FocusItemHistory,
   FocusItemHistoryRequest,
   FocusHistoryByIdRequest
-} from './nursing/focus'
+} from './nursing/focus';
 
 export type {
   InterventionItemsLookup,
   InterventionItemsLookupRequest
-} from './nursing/intervention'
+} from './nursing/intervention';
 
-export type { ProblemItem } from './nursing/problem'
+export type { ProblemItem } from './nursing/problem';
 
 export type {
   VitalSignItem,
@@ -83,7 +83,7 @@ export type {
   IntakeItem,
   FluidOutputItem,
   ExcreteItem
-} from './nursing/vitalsign'
+} from './nursing/vitalsign';
 
 export type {
   VitalSign,
@@ -91,7 +91,7 @@ export type {
   NursingNoteAssessment,
   NursingNoteIntervention,
   NursingNoteEvaluation
-} from './nursing'
+} from './nursing';
 
 export type {
   Patient,
@@ -107,11 +107,11 @@ export type {
   PatientHealthInfoRequest,
   PatientHealthLabRequest,
   PatientHealthVitalSignRequest
-} from './patient'
+} from './patient';
 
-export type { ErrorResponse, ServerResponse } from './service'
+export type { ErrorResponse, ServerResponse } from './service';
 
-export type { SubmitStatus } from './status'
+export type { SubmitStatus } from './status';
 
 export type {
   User,
@@ -120,6 +120,11 @@ export type {
   UserSettings,
   UserSignature,
   RecentAuth
-} from './user'
+} from './user';
 
-export type { GlobalConfig, watcherEntityEvent, RequestType } from './utils'
+export type { GlobalConfig, watcherEntityEvent, RequestType } from './utils';
+
+export {
+  MedpayIpdDocScan,
+  MedpayIpdDocScanHistoryRequest
+} from './doctororder';

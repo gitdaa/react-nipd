@@ -208,3 +208,13 @@ export {
   getPatientHealthLab,
   getPatientRecentMedication
 } from './patient'
+
+export const GET_DOCTOR_ORDER_HISTORY = createRequestType(
+  'GET_DOCTOR_ORDER_HISTORY'
+)
+export const NEW_DOCTOR_ORDER = createRequestType('NEW_DOCTOR_ORDER')
+
+export {
+  getDoctorOrderHistoryAction,
+  newDoctorOrderAction
+} from './doctororder'
