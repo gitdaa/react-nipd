@@ -1,6 +1,6 @@
 {
   "name": "react-nipd",
-  "version": "1.1.3",
+  "version": "1.2.0",
   "description": "Made with create-react-library",
   "author": "krissada sumalai",
   "license": "MIT",
@@ -69,7 +69,6 @@
   "dependencies": {
     "dayjs": "^1.10.6",
     "lodash": "^4.17.21",
-    "react-nipd": "1.0.26",
     "redux": "^4.1.0"
   }
 }
