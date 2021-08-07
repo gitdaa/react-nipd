@@ -1,3 +1,3 @@
-export {} from './actions'
+export {} from './actions';
 
-export { action, createRequestType } from './libs'
+export { action, createRequestType } from './libs';
