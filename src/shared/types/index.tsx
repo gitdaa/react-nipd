@@ -126,5 +126,7 @@ export type { GlobalConfig, watcherEntityEvent, RequestType } from './utils';
 
 export {
   MedpayIpdDocScan,
-  MedpayIpdDocScanHistoryRequest
+  MedpayIpdDocScanHistoryRequest,
+  ClinicalSummaryDischarge,
+  ClinicalSummaryDischargeRequest
 } from './doctororder';

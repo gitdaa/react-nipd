@@ -228,3 +228,16 @@ export {
   newDoctorOrderAction,
   getInitialDoctorOrderAction
 } from './doctororder';
+
+export const GET_CLINICAL_SUMMARY_DISCHARGE = createRequestType(
+  'GET_CLINICAL_SUMMARY_DISCHARGE'
+);
+
+export const UPDATE_CLINICAL_SUMMARY_DISCHARGE = createRequestType(
+  'UPDATE_CLINICAL_SUMMARY_DISCHARGE'
+);
+
+export {
+  getClinicalSummaryDischargeAction,
+  updateClinicalSummaryDischargeAction
+} from './doctororder/discharge';
