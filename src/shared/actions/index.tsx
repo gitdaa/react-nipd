@@ -241,3 +241,15 @@ export {
   getClinicalSummaryDischargeAction,
   updateClinicalSummaryDischargeAction
 } from './doctororder/discharge';
+
+export const GET_DOCTOR_TAG_BY_AN = createRequestType('GET_DOCTOR_TAG_BY_AN');
+export const INSERT_DOCTOR_TAG = createRequestType('INSERT_DOCTOR_TAG');
+export const UPDATE_DOCTOR_TAG = createRequestType('UPDATE_DOCTOR_TAG');
+export const REMOVE_DOCTOR_TAG = createRequestType('REMOVE_DOCTOR_TAG');
+
+export {
+  getDoctorTagByAnAction,
+  addDoctorTagAction,
+  updateDoctorTagAction,
+  removeDoctorTagAction
+} from './doctororder/tag';
