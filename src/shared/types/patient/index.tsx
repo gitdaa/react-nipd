@@ -2,6 +2,7 @@
 import { BaseRequest } from '..';
 import { FlashNotifyItem } from '../notify';
 import { VitalSignNoteItem } from '../nursing/vitalsign';
+import { PatientTagItem } from '../doctororder/tag';
 
 export interface Patient {
   hn: string;
@@ -25,6 +26,7 @@ export interface Patient {
   notify?: FlashNotifyItem[];
   notifys?: PatientNotifyGroup;
   vitalsign: VitalSignNoteItem[];
+  tags: PatientTagItem[];
 }
 
 export interface PatientNotifyGroup {

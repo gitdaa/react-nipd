@@ -4,6 +4,18 @@ import { action } from '../../libs/const';
 import { PatientTagItem } from '../../types/doctororder/tag';
 import { ServerResponse, ErrorResponse } from '../../types';
 
+export const getDoctorTagByWardAction = {
+  request: (ward: number | undefined) =>
+    action(ActionConst.GET_DOCTOR_TAG_BY_WARD.REQUEST, { ward }),
+  success: (_: string, response: ServerResponse<PatientTagItem[]>) =>
+    action(ActionConst.GET_DOCTOR_TAG_BY_WARD.SUCCESS, {
+      data: response.data
+    }),
+  failure: (_: string, error: ErrorResponse) =>
+    action(ActionConst.GET_DOCTOR_TAG_BY_WARD.FAILURE, { error }),
+  clear: () => action(ActionConst.GET_DOCTOR_TAG_BY_WARD.CLEAR)
+};
+
 export const getDoctorTagByAnAction = {
   request: () => action(ActionConst.GET_DOCTOR_TAG_BY_AN.REQUEST),
   success: (_: string, response: ServerResponse<PatientTagItem[]>) =>
