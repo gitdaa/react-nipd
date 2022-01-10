@@ -16,6 +16,8 @@ export const LOGIN = createRequestType('LOGIN');
 
 export const GET_PATIENT_OWNER = createRequestType('GET_PATIENT_OWNER');
 export const GET_PATIENT_STANDING = createRequestType('GET_PATIENT_STANDING');
+export const GET_PATIENT_CI_OWNER = createRequestType('GET_PATIENT_CI_OWNER');
+export const GET_PATIENT_HI_OWNER = createRequestType('GET_PATIENT_HI_OWNER');
 export const ADD_TO_DESK = createRequestType('ADD_TO_DESK');
 export const GET_PATIENT_HEALTH = createRequestType('GET_PATIENT_HEALTH');
 
@@ -80,6 +82,8 @@ export const FETCH_VITAL_SIGN_LAST_DAY = createRequestType(
 export const FETCH_VITAL_SIGN_BY_WARD = createRequestType(
   'FETCH_VITAL_SIGN_BY_WARD'
 );
+
+export const FETCH_CI_VITAL_SIGN = createRequestType('FETCH_CI_VITAL_SIGN');
 
 export { fetchVitalSignLastDayAction } from './nursingnote/vitalsign';
 
@@ -212,7 +216,9 @@ export {
   getPatientHealthVitalSign,
   getPatientAllergies,
   getPatientHealthLab,
-  getPatientRecentMedication
+  getPatientRecentMedication,
+  patientCIOwnerAction,
+  patientHIOwnerAction
 } from './patient';
 
 export const GET_DOCTOR_ORDER_HISTORY = createRequestType(

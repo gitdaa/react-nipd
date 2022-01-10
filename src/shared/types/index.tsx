@@ -9,7 +9,6 @@ export interface BaseRequest<T> {
   errorMessage: string;
   data: T;
 }
-
 export type {
   MedicationDispensed,
   MedicationPlanInterval,
@@ -101,6 +100,7 @@ export type {
   PatientSearchState,
   PatientInfoAllergies,
   PatientOwnerRequest,
+  PatientCIOwnerRequest,
   PatientStanding,
   PatientStandingRequest,
   HealthInfo,

@@ -1,28 +1,28 @@
-import * as React from 'react'
-import styles from './styles.module.css'
+import * as React from 'react';
+import styles from './styles.module.css';
 
 interface Props {
-  text: string
+  text: string;
 }
 
 export const ExampleComponent = ({ text }: Props) => {
-  return <div className={styles.test}>XXX Component: {text}</div>
-}
+  return <div className={styles.test}>XXXX Component: {text}</div>;
+};
 
 export const XExampleComponent = ({ text }: Props) => {
-  return <div className={styles.test}>XExample Component: {text}</div>
-}
+  return <div className={styles.test}>XExample Component: {text}</div>;
+};
 
 export const ABCComponent = ({ text }: Props) => {
-  return <div className={styles.test}>TEST XExample Component: {text}</div>
-}
+  return <div className={styles.test}>TEST XExample Component: {text}</div>;
+};
 
-export { action, createRequestType } from './shared/libs'
+export { action, createRequestType } from './shared/libs';
 
-export * as RequestAction from './shared/actions/request'
+export * as RequestAction from './shared/actions/request';
 
-export * as ActionConst from './shared/actions'
+export * as ActionConst from './shared/actions';
 
-export * as Reducers from './shared/reducers'
+export * as Reducers from './shared/reducers';
 
-export type TypeExample = Props
+export type TypeExample = Props;

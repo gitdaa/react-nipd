@@ -29,6 +29,15 @@ export interface Patient {
   tags: PatientTagItem[];
 }
 
+export interface PatientClinicMember extends Patient {
+  clinicmember_id?: number;
+  clinic_member_status_id?: number;
+  clinic_member_status_name?: string;
+  clinic_regdate?: string;
+  clinic_dchdate?: string;
+  note?: string;
+}
+
 export interface PatientNotifyGroup {
   laboratory?: FlashNotifyItem[];
   medication?: FlashNotifyItem[];
@@ -75,6 +84,12 @@ export interface PatientInfoAllergies {
 }
 
 export interface PatientOwnerRequest extends BaseRequest<Patient[]> {
+  errorAttempt: number;
+  filter: string | null;
+}
+
+export interface PatientCIOwnerRequest
+  extends BaseRequest<PatientClinicMember[]> {
   errorAttempt: number;
   filter: string | null;
 }
