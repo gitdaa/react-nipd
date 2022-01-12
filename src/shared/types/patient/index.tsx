@@ -35,6 +35,7 @@ export interface PatientClinicMember extends Patient {
   clinic_member_status_name?: string;
   clinic_regdate?: string;
   clinic_dchdate?: string;
+  vn_list?: number[];
   note?: string;
 }
 

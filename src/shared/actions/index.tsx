@@ -85,6 +85,8 @@ export const FETCH_VITAL_SIGN_BY_WARD = createRequestType(
 
 export const FETCH_CI_VITAL_SIGN = createRequestType('FETCH_CI_VITAL_SIGN');
 
+export const FETCH_CI_VITAL_BY_VN = createRequestType('FETCH_CI_VITAL_BY_VN');
+
 export { fetchVitalSignLastDayAction } from './nursingnote/vitalsign';
 
 export const NN_LOOKUP_DIAGGROUP = createRequestType('NN_LOOKUP_DIAGGROUP');
