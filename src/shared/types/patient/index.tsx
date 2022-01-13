@@ -31,6 +31,7 @@ export interface Patient {
 
 export interface PatientClinicMember extends Patient {
   clinicmember_id?: number;
+  clinic?: string;
   clinic_member_status_id?: number;
   clinic_member_status_name?: string;
   clinic_regdate?: string;
