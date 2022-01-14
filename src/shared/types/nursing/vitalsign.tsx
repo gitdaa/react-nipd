@@ -14,6 +14,10 @@ export interface VitalSignItem {
   diet_text?: string;
 }
 
+export interface VitalSignIntervention {
+  intervention_text: string;
+}
+
 export interface VitalSignNoteItem extends VitalSignItem {
   id?: number;
   nurse_note_id: number;
@@ -27,6 +31,7 @@ export interface VitalSignNoteItem extends VitalSignItem {
   note: string;
   staff: string;
   ipd_nurse_shift_id: number;
+  intervention_list: VitalSignIntervention[];
 }
 
 export interface VitalSignNoteItemRequest {
