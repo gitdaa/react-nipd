@@ -15,7 +15,11 @@ export interface VitalSignItem {
 }
 
 export interface VitalSignIntervention {
+  ipd_nurse_note_intervention_id: number;
+  nurse_note_id: number;
   intervention_text: string;
+  user_id: number;
+  created_at: string;
 }
 
 export interface VitalSignNoteItem extends VitalSignItem {
