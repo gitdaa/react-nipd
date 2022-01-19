@@ -38,6 +38,8 @@ export interface PatientClinicMember extends Patient {
   clinic_dchdate?: string;
   vn_list?: number[];
   note?: string;
+  person_hi_id?: number;
+  claim_code?: string;
 }
 
 export interface PatientNotifyGroup {
@@ -61,6 +63,11 @@ export interface PatientInfo extends Patient {
   prediag: string;
   doctor: string;
   access_key: string;
+
+  // for moph hi
+  clinicmember_id?: number;
+  person_hi_id?: number;
+  claim_code?: string;
 }
 
 export interface PatientState {
