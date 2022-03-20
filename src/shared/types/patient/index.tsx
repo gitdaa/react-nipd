@@ -38,6 +38,7 @@ export interface PatientClinicMember extends Patient {
   clinic_dchdate?: string;
   vn_list?: number[];
   note?: string;
+  web_rtc?: string;
   person_hi_id?: number;
   claim_code?: string;
 }
